@@ -1,8 +1,7 @@
 while True:
     s = input('Enter an integer:')
-    if s.isnumeric() or (s[0]=='-' and s[1:].isnumeric):
+    if int(float(s[1:]))==float(s[1:]):
         break
     else:
         print('The input is invalid!')
-
 print('Data accepted!')
